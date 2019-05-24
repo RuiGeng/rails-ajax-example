@@ -1,0 +1,11 @@
+<h1>Tutorials</h1>
+
+<input id="input1"></input>
+<button id="btn1">Search Data</button>
+<p id="p1"></p>
+
+<ul>
+  <% @tutorials.each do |tutorial| %>
+    <li><%= tutorial.title %> <%= link_to "Hide", "", class: 'hide', data: {'js-hide-link' => true} %></li>
+  <% end %>
+</ul>
